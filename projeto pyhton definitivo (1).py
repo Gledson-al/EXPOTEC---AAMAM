@@ -714,6 +714,7 @@ try:
             print('2 - Remédios')
             print('3 - Tratamentos')
             print('4 - Contatos de Emergência')
+            print('0 - Voltar ao menu principal')
 
             escolha = input('\nEscolha uma opção: ')
 
@@ -729,6 +730,9 @@ try:
             elif escolha == '4':
                 listar_contatoemergencia(conexao)
 
+            elif escolha == '0':
+                continue
+
             else:
                 print('Opção inválida.')
 
@@ -742,6 +746,7 @@ try:
             print('2 - Remédios')
             print('3 - Tratamentos')
             print('4 - Contatos de Emergência')
+            print('0 - Voltar ao menu principal')
 
             escolha = input('\nEscolha uma opção: ')
 
@@ -757,6 +762,9 @@ try:
             elif escolha == '4':
                 adicionar_contatoemergencia(conexao)
 
+            elif escolha == '0':
+                continue
+
             else:
                 print('Opção inválida.')
 
@@ -770,6 +778,7 @@ try:
             print('2 - Remédios')
             print('3 - Tratamentos')
             print('4 - Contatos de Emergência')
+            print('0 - Voltar ao menu principal')
 
             escolha = input('\nEscolha uma opção: ')
 
@@ -785,6 +794,9 @@ try:
             elif escolha == '4':
                 atualizar_contatoemergencia(conexao)
 
+            elif escolha == '0':
+                continue
+
             else:
                 print('Opção inválida.')
 
@@ -798,6 +810,7 @@ try:
             print('2 - Remédios')
             print('3 - Tratamentos')
             print('4 - Contatos de Emergência')
+            print('0 - Voltar ao menu principal')
 
             escolha = input('\nEscolha uma opção: ')
 
@@ -815,6 +828,9 @@ try:
             elif escolha == '4':
                 id_contato = input("ID do contato: ")
                 excluir_contatoemergencia(conexao, id_contato)
+
+            elif escolha == '0':
+                continue
 
             else:
                 print('Opção inválida.')
